@@ -13,7 +13,7 @@ WORKDIR /app
 
 # Копирование файлов проекта
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Копирование исходного кода
 COPY src/ /app/src/
