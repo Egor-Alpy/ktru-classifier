@@ -1,0 +1,41 @@
+# Основные библиотеки
+python-dotenv==1.0.0
+pydantic==2.7.1
+loguru==0.7.2
+
+# Работа с данными
+pymongo==4.6.2
+qdrant-client==1.8.0
+faiss-gpu==1.7.2
+faiss-cpu==1.7.2  # Запасной вариант для систем без GPU
+numpy==1.26.4
+pandas==2.2.1
+bson==0.5.10  # Для работы с ObjectId в MongoDB
+
+# Модели ML
+torch==2.2.1
+torchvision==0.17.1
+torchaudio==2.2.1
+transformers==4.38.1
+sentence-transformers==2.5.1
+accelerate==0.30.0
+safetensors==0.4.1
+
+# API и сервер
+fastapi==0.110.0
+uvicorn[standard]==0.30.1
+gunicorn==21.2.0
+httpx==0.27.0  # HTTP клиент для тестирования
+
+# Утилиты
+schedule==1.2.1
+tqdm==4.66.2
+tenacity==8.2.3  # Для повторных попыток при сбоях
+pytz==2023.3.post1  # Для работы с временными зонами
+
+# Опциональные зависимости
+# Раскомментируйте, если они понадобятся:
+# scikit-learn==1.4.0  # Для дополнительных ML-алгоритмов
+# matplotlib==3.8.2  # Для визуализации
+# seaborn==0.13.1  # Для расширенной визуализации
+# datasets==2.16.0  # Для работы с наборами данных HuggingFace
